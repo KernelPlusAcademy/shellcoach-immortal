@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ShellCoach NFT Certificate</title>
+  <style>
+    body {
+      background: #0f172a;
+      color: #facc15;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+    .nft {
+      border: 4px solid #facc15;
+      border-radius: 1rem;
+      padding: 2rem;
+      display: inline-block;
+      max-width: 500px;
+    }
+    .nft h1 {
+      font-size: 2rem;
+    }
+    .nft p {
+      font-size: 1.25rem;
+      color: #e2e8f0;
+    }
+    .mint-button {
+      background: #10b981;
+      color: #fff;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      margin-top: 1.5rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="nft">
+    <h1>ShellCoach NFT Certificate</h1>
+    <p>This NFT certifies that</p>
+    <h2 id="name">ShellCoach User</h2>
+    <p>has achieved Legendary Status in Linux Mastery</p>
+    <p><em>Issued: <span id="date"></span></em></p>
+    <button class="mint-button" onclick="mintNFT()">Mint NFT</button>
+  </div>
+
+  <script>
+    document.getElementById("name").textContent = localStorage.getItem("shellcoach_name") || "ShellCoach User";
+    document.getElementById("date").textContent = new Date().toLocaleDateString();
+    function mintNFT() {
+      alert("NFT minted to connected wallet! (simulated)");
+    }
+  </script>
+</body>
+</html>

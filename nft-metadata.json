@@ -1,0 +1,11 @@
+
+{
+  "name": "ShellCoach Certificate NFT",
+  "description": "This NFT certifies that the holder has achieved Legendary Linux status on ShellCoach.",
+  "image": "https://shellcoach.com/nft-preview.png",
+  "attributes": [
+    { "trait_type": "Rank", "value": "Legendary" },
+    { "trait_type": "Achievement", "value": "100% Lab Completion" },
+    { "trait_type": "Streak", "value": "30 Days" }
+  ]
+}
